@@ -43,4 +43,5 @@ th{
 td{
     border: 2px solid darkslategray;
     background-color: beige;
+    border-radius: 10px;
 }
