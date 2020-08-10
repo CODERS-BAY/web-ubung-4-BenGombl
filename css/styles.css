@@ -8,10 +8,10 @@ header {
     background-color: #2f4f3f;
     background-image: linear-gradient(0deg, #093030, #2f4f3f);
     border: 0.4rem solid #e5e3cf;
+    border-top: none;
     border-radius: 0 0 1rem 1rem;
     box-shadow: 0 0 3rem black;
     z-index: 1;
-
 }
 
 header h1 {
@@ -46,9 +46,7 @@ nav {
 
     position: sticky;
     top: 0;
-
     box-shadow: 0 0.5rem 1rem #6f6f6f;
-
 }
 
 nav a {
@@ -59,11 +57,9 @@ nav a {
     margin-top: 3px;
     margin-left: 5rem;
     font-family: Verdana, sans-serif;
-
 }
 
 nav a:hover {
-    
     color: black;
     text-shadow: 1px 1px 0.5px darkslategray;
 }
@@ -82,9 +78,6 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     margin: auto;
-
-
-
 }
 
 h2 {
@@ -96,24 +89,21 @@ h2 {
 article {
     font-size: 1.5rem;
     font-family: Georgia, serif;
-    
 }
 
 img {
     height: 250px;
     margin: 1rem;
     box-shadow: 0 0 1rem black;
-
 }
 
 table {
-    
     font-family: Verdana, sans-serif;
     color: darkslategray;
 
     width: 90%;
     margin: auto;
-    
+
     font-size: 1.2rem;
     text-align: center;
 
@@ -121,10 +111,9 @@ table {
     box-shadow: 0 0.5rem 1rem #f9fff9;
 }
 
-thead tr{
+thead tr {
     padding-bottom: 1rem;
 }
-
 
 th {
     font-family: 'Trebuchet MS', sans-serif;
@@ -134,24 +123,19 @@ th {
     border-radius: 0.4rem;
 }
 
-thead tr th{
+thead tr th {
     border-top: 2px solid darkslategray;
     padding-bottom: 0.5rem;
 }
 
-tfoot tr th{
+tfoot tr th {
     border-bottom: 2px solid darkslategray;
     padding-top: 0.5rem;
 }
 
-
-tr:nth-of-type(odd){
+tr:nth-of-type(odd) {
     background-color: #f9fff9;
 }
-
-
-
-
 
 dl {
     font-size: 1.8rem;
@@ -164,7 +148,7 @@ dt {
     font-weight: bold;
     background-color: beige;
     padding: 0.3rem;
-    margin-bottom: 0.8rem;
+    margin: 0.8rem 0;
     border-radius: 0.5rem;
     box-shadow: 0 3px 0.8rem black;
     border-right: 3px solid black;
@@ -182,16 +166,10 @@ dd {
 
 form {
     font-size: 1.5rem;
-
     padding: 0;
-
-
     margin-right: calc(50% - 10rem);
-
     text-align: right;
     border-right: 3px solid darkslategray;
-    
-
 }
 
 form input {
@@ -199,13 +177,9 @@ form input {
     padding: 0;
 }
 
-
-
 form div {
-
     margin-right: 3rem;
     margin-bottom: 3rem;
-
 }
 
 form button {
@@ -222,16 +196,16 @@ form button:hover {
     color: black;
 }
 
-form input, form select, form textarea{
+form input,
+form select,
+form textarea {
     font-size: 1.2rem;
 }
 
-form input[type="text"], form input[type="email"]{
+form input[type="text"],
+form input[type="email"] {
     text-align: center;
 }
-
-
-
 
 footer {
     width: 95%;
@@ -239,38 +213,42 @@ footer {
     text-align: right;
 }
 
-@media screen and (max-width: 960px){
-    header h1{
+@media screen and (max-width: 960px) {
+    header h1 {
         font-size: 6rem;
     }
 }
 
-@media screen and (max-width: 810px){
-    img{
+@media screen and (max-width: 810px) {
+    img {
         height: 200px;
     }
-    h2{
+
+    h2 {
         font-size: 2rem;
     }
-    th{
+
+    th {
         font-size: 1.2rem;
     }
-    td{
+
+    td {
         font-size: 0.9rem;
     }
 }
 
-@media screen and (max-width: 610px){
-    header h1{
+@media screen and (max-width: 610px) {
+    header h1 {
         font-size: 4.5rem;
     }
-    nav a{
+
+    nav a {
         font-size: 0.9rem;
         margin-left: 2rem;
     }
 
-    
-    th:nth-of-type(5), td:nth-of-type(5){
+    th:nth-of-type(5),
+    td:nth-of-type(5) {
         display: none;
     }
 }
