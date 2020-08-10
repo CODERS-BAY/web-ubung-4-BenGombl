@@ -7,7 +7,7 @@ body {
 header {
     background-color: #2f4f3f;
     background-image: linear-gradient(0deg, #093030, #2f4f3f);
-    border: 0.4rem solid #f0f0f0;
+    border: 0.4rem solid #e5e3cf;
     border-radius: 0 0 1rem 1rem;
     box-shadow: 0 0 3rem black;
     z-index: 1;
@@ -30,7 +30,7 @@ header h1 {
 }
 
 nav {
-    background-color: #f2f2f9;
+    background-color: #e5e3cf;
 
     padding: 0 3rem 0.5rem 3rem;
     border: 5px solid #1f3f2f;
@@ -57,14 +57,15 @@ nav a {
     text-decoration: none;
     font-size: 1.2rem;
     margin-top: 3px;
-    margin-left: 2rem;
+    margin-left: 5rem;
+    font-family: Verdana, sans-serif;
 
 }
 
 nav a:hover {
-    margin-top: 1px;
+    
     color: black;
-    text-shadow: 1px 1px 0.2rem white;
+    text-shadow: 1px 1px 0.5px darkslategray;
 }
 
 nav a.current {
@@ -94,6 +95,7 @@ h2 {
 
 article {
     font-size: 1.5rem;
+    font-family: Georgia, serif;
     
 }
 
@@ -105,13 +107,15 @@ img {
 }
 
 table {
+    
+    font-family: Verdana, sans-serif;
     color: darkslategray;
 
     width: 90%;
     margin: auto;
     
 
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-align: center;
 
 
@@ -124,6 +128,9 @@ table {
 
 
 th {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
     border: 2px solid darkslategray;
     background-color: beige;
     border-radius: 10px;
@@ -151,9 +158,13 @@ td:last-child{
 
 dl {
     font-size: 1.8rem;
+    font-family: Verdana, sans-serif;
 }
 
 dt {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
     background-color: beige;
     padding: 0.3rem;
     margin-bottom: 0.8rem;
@@ -214,6 +225,10 @@ form button:hover {
     color: black;
 }
 
+form input, form select, form textarea{
+    font-size: 1.2rem;
+}
+
 
 
 
@@ -241,5 +256,9 @@ footer {
 @media screen and (max-width: 610px){
     header h1{
         font-size: 4.5rem;
+    }
+    nav a{
+        font-size: 0.9rem;
+        margin-left: 2rem;
     }
 }
