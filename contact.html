@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+</head>
+
+<body>
+    <header>
+        <h1>Kontakt</h1>
+    </header>
+
+    <main>
+        <nav>
+            <a href="index.html">Start</a>
+            <a href="information.html">Informationen</a>
+            <a class = "current" href="contact.html">Kontakt</a>
+
+        </nav>
+
+        <form action="kapitel_08/ausgabe.html">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" name="name" placeholder="Maria Musterfrau"></input>
+            </div>
+
+            <div>
+                <label for="email">e-mail Adresse:</label>
+                <input type="email" name="email" placeholder="name@e-mail.com"></input>
+            </div>
+
+            <div>
+                <label for="date">Besuchstag:</label>
+                <input type="date" name="date" />
+            </div>
+
+            <div>
+                <label for="time">Besuchszeit:</label>
+                <input type="time" name="time"></input>
+            </div>
+
+            <div>
+                <label for="favAnimal">dein Lieblingstier?:</label>
+                <input list="animals" name="favAnimal">
+                <datalist id="animals">
+                    <option value="Manul">Manul</option>
+                    <option value="RoterPanda">Roter Panda</option>
+                    <option value="Maulwurf">Maulwurf</option>
+                    <option value="Pferd">Pferd</option>
+                    <option value="Koala">Koala</option>
+                    <option value="Flunder">Flunder</option>
+                    <option value="DreistachligerStichling">Dreistachliger Stichling</option>
+                    <option value="SchwarzerOelkaefer">Schwarzer Ölkäfer</option>
+                    <option value="RostroteMauerbiene">Rostrote Mauerbiene</option>
+                    <option value="GemeineSkorpionsfliege">Gemeine Skorpionsfliege</option>
+                    <option value="Waldkauz">Waldkauz</option>
+                </datalist>
+            </div>
+            
+            <div>
+                <label for="recommend">Würdest du meinen Zoo weiterempfehlen?</label>
+                <input type="checkbox" name="recommend" />
+            </div> 
+            
+            <div>
+                <label for="visitorInfo">Besucherinformation:</label>
+                <select name="visitorInfo">
+                    <option value="1">Familienausflug</option>
+                    <option value="2">allein unterwegs</option>
+                    <option value="3">Gruppenausflug</option>
+                    <option value="4">mit Freunden</option>
+                    <option value="5">was anderes</option>
+                </select>
+                
+            </div>
+
+
+            <div id = "rating">
+                <label  for="rating">Wie sehr hat es dir gefallen? (0 = megascheiße, 10 = Best Day of my Life):</label></br>
+                0<input type="range" name="rating">10</input>
+            </div>
+
+            
+
+
+
+            <div id ="textarea">
+                <textarea name="comment" cols="30" rows="5"
+                    placeholder="Was möchtest du uns sonst noch mitteilen?"></textarea>
+            </div>
+
+           
+
+            <div id = "buttons">
+                <button type="submit">Absenden</button>
+                <button type="reset">Reset</button>
+
+            </div>
+
+
+
+        </form>
+
+
+
+
+    </main>
+
+    <footer>made by Ben</footer>
+
+</body>
+
+</html>

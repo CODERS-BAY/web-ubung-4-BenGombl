@@ -1,47 +1,245 @@
-main{
+body {
+    background-color: #f0f9f0;
+    background-image: linear-gradient(0deg, #cbdfdf, #f9fff9);
+    background-attachment: fixed;
+}
+
+header {
+    background-color: #2f4f3f;
+    background-image: linear-gradient(0deg, #093030, #2f4f3f);
+    border: 0.4rem solid #f0f0f0;
+    border-radius: 0 0 1rem 1rem;
+    box-shadow: 0 0 3rem black;
+    z-index: 1;
+
+}
+
+header h1 {
+    font-size: 8rem;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    color: #183939;
+    text-align: center;
+    text-shadow: 3px 3px 4px white;
+
+    text-transform: uppercase;
+    text-decoration: underline overline;
+    letter-spacing: -6px;
+
+    padding-bottom: 5px;
+    margin: 0;
+}
+
+nav {
+    background-color: #f2f2f9;
+
+    padding: 0 3rem 0.5rem 3rem;
+    border: 5px solid #1f3f2f;
+    border-left: 12px solid #1f3f2f;
+    border-right: 12px solid #1f3f2f;
+    border-top: none;
+    border-radius: 0 0 5rem 5rem;
+    margin-bottom: 5rem;
+
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+    position: sticky;
+    top: 0;
+
+    box-shadow: 0 0.5rem 1rem #6f6f6f;
+
+}
+
+nav a {
+    position: relative;
+    color: #2f4f2f;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-top: 3px;
+    margin-left: 2rem;
+
+}
+
+nav a:hover {
+    margin-top: 1px;
+    color: black;
+    text-shadow: 1px 1px 0.2rem white;
+}
+
+nav a.current {
+    font-weight: bold;
+}
+
+main {
     max-width: 90%;
     margin: auto;
 }
 
-#pics{
+#pics {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: auto;
-    
-    
+
+
+
+}
+
+h2 {
+    font-size: 3rem;
+    font-family: Tahoma, sans-serif;
+    text-shadow: 3px 4px 0.2rem white;
+}
+
+article {
+    font-size: 1.5rem;
     
 }
 
-article#welcome{
-    display: block;
-    width: 80rem;
-    margin: auto;
-}
-
-img{
+img {
     height: 250px;
     margin: 1rem;
-    
+    box-shadow: 0 0 1rem black;
+
 }
 
-table{
+table {
+    color: darkslategray;
 
     width: 90%;
     margin: auto;
-    background-color: darkolivegreen;
-    border: 3px solid gray;
+    
 
     font-size: 1.5rem;
     text-align: center;
+
+
+    border-radius: 0 0 1rem 1rem;
+    box-shadow: 0 0.5rem 1rem #f9fff9;
+
+    
 }
 
-th{
-    color: whitesmoke;
-}
 
-td{
+
+th {
     border: 2px solid darkslategray;
     background-color: beige;
     border-radius: 10px;
+    z-index: 10;
+}
+td{
+    box-shadow: 0 0 0.5rem #f9fff9;
+    
+}
+
+tr:nth-of-type(odd){
+    background-color: #f9fff9;
+}
+
+
+td:nth-of-type(odd){
+    
+    border-radius: 0.5rem;
+    border-right: 3px solid darkslategray;
+    border-left: 3px solid darkslategray;
+}
+td:last-child{
+    border-right: 3px solid darkslategray;
+}
+
+dl {
+    font-size: 1.8rem;
+}
+
+dt {
+    background-color: beige;
+    padding: 0.3rem;
+    margin-bottom: 0.8rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 3px 0.8rem black;
+    border-right: 3px solid black;
+}
+
+dd {
+    width: 90%;
+    margin: auto;
+    border-right: 3px solid black;
+    border-left: 3px solid black;
+    padding-left: 0.4rem;
+    text-shadow: 0 0 0.8rem white;
+}
+
+
+form {
+    font-size: 1.5rem;
+
+    padding: 0;
+
+
+    margin-right: calc(50% - 10rem);
+
+    text-align: right;
+    border-right: 3px solid darkslategray;
+    
+
+}
+
+form input {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+form div {
+
+    margin-right: 3rem;
+    margin-bottom: 3rem;
+
+}
+
+form button {
+    width: 8rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: lightgray;
+    color: #183939;
+}
+
+form button:hover {
+    box-shadow: 0 0 1rem white;
+    background-color: lightgray;
+    color: black;
+}
+
+
+
+
+footer {
+    width: 95%;
+    margin-top: 3rem;
+    text-align: right;
+}
+
+@media screen and (max-width: 960px){
+    header h1{
+        font-size: 6rem;
+    }
+}
+
+@media screen and (max-width: 810px){
+    img{
+        height: 200px;
+    }
+    h2{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 610px){
+    header h1{
+        font-size: 4.5rem;
+    }
 }
