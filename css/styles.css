@@ -170,8 +170,7 @@ td {
 dl {
     font-size: 1.8rem;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    list-style-type: disc;
-    list-style-image: url(../img/pawprint.png);
+   
 }
 
 dt {
