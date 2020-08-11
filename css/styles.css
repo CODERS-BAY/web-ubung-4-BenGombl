@@ -11,7 +11,8 @@ header {
     border-top: none;
     border-radius: 0 0 1rem 1rem;
     box-shadow: 0 0 3rem black;
-    z-index: 1;
+    
+    
 }
 
 header h1 {
@@ -59,7 +60,7 @@ nav a {
     font-family: Verdana, sans-serif;
 }
 
-nav a:hover {
+nav a:hover, nav a:focus {
     color: black;
     text-shadow: 1px 1px 0.5px darkslategray;
 }
@@ -71,6 +72,7 @@ nav a.current {
 main {
     max-width: 90%;
     margin: auto;
+    
 }
 
 #pics {
@@ -89,6 +91,7 @@ h2 {
 article {
     font-size: 1.5rem;
     font-family: Georgia, serif;
+    overflow: auto;
 }
 
 img {
@@ -96,20 +99,23 @@ img {
     margin: 1rem;
     box-shadow: 0 0 1rem black;
 }
-
+/*---------------Table---------------*/
 table {
     font-family: Verdana, sans-serif;
     color: darkslategray;
 
-    width: 90%;
+    min-width: 90%;
     margin: auto;
 
     font-size: 1.2rem;
     text-align: center;
-
+    background-color: #f0fcfc;
     border-radius: 0 0 1rem 1rem;
     box-shadow: 0 0.5rem 1rem #f9fff9;
+    
+    
 }
+
 
 thead tr {
     padding-bottom: 1rem;
@@ -134,10 +140,21 @@ tfoot tr th {
 }
 
 tr:nth-of-type(odd) {
-    background-color: #e0f0e0;
+    background-color: #e4f4e4;
+}
+tr:nth-of-type(even){
+    background-color: #f0fcfc;
 }
 
+td{
+    min-width: 7rem;
+}
+
+
+
+/*------------description List------------*/
 dl {
+    
     font-size: 1.8rem;
     font-family: Verdana, sans-serif;
 }
@@ -155,6 +172,7 @@ dt {
 }
 
 dd {
+    background-color: #f0fcfc;
     width: 90%;
     margin: auto;
     border-right: 3px solid black;
@@ -163,13 +181,13 @@ dd {
     text-shadow: 0 0 0.8rem white;
 }
 
-
+/*---------------form---------------*/
 form {
     font-size: 1.5rem;
     padding: 0;
     margin-right: calc(50% - 10rem);
     text-align: right;
-    border-right: 3px solid darkslategray;
+    border-right: 1px solid darkslategray;
 }
 
 form input {
@@ -178,6 +196,7 @@ form input {
 }
 
 form div {
+    margin-left: 1rem;
     margin-right: 3rem;
     margin-bottom: 3rem;
 }
@@ -190,10 +209,11 @@ form button {
     color: #183939;
 }
 
-form button:hover {
-    box-shadow: 0 0 1rem white;
-    background-color: lightgray;
+form button:hover, form button:focus{
+    border: 1px solid #507250;
+    background-color: #d0e2d0;
     color: black;
+    
 }
 
 form input,
@@ -217,6 +237,10 @@ footer {
     header h1 {
         font-size: 6rem;
     }
+    td{
+        min-width: 0;
+    }
+    
 }
 
 @media screen and (max-width: 810px) {
@@ -228,27 +252,36 @@ footer {
         font-size: 2rem;
     }
 
-    th {
-        font-size: 1.2rem;
-    }
-
-    td {
-        font-size: 0.9rem;
+    
+    nav a{
+        margin-left: 2rem;
     }
 }
 
 @media screen and (max-width: 610px) {
+    header{
+        border-left: none;
+        border-right: none;
+    }
     header h1 {
         font-size: 4.5rem;
     }
 
     nav a {
         font-size: 0.9rem;
-        margin-left: 2rem;
+        
     }
 
     th:nth-of-type(5),
     td:nth-of-type(5) {
         display: none;
+    }
+  
+
+    main{
+        max-width: none;
+        width: 100%;
+        margin: auto;
+        
     }
 }
