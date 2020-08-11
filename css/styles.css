@@ -134,7 +134,7 @@ tfoot tr th {
 }
 
 tr:nth-of-type(odd) {
-    background-color: #f9fff9;
+    background-color: #e0f0e0;
 }
 
 dl {
