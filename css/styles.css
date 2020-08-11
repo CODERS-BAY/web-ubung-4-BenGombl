@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Rowdies:wght@300;400;700&display=swap');
+
 body {
     background-color: #f0f9f0;
     background-image: linear-gradient(0deg, #f0fcfc, #fff);
@@ -11,8 +13,6 @@ header {
     border-top: none;
     border-radius: 0 0 1rem 1rem;
     box-shadow: 0 0 3rem black;
-    
-    
 }
 
 header h1 {
@@ -39,6 +39,8 @@ nav {
     border-right: 12px solid #1f3f2f;
     border-top: none;
     border-radius: 0 0 5rem 5rem;
+
+    margin: auto;
     margin-bottom: 5rem;
 
     display: flex;
@@ -57,10 +59,15 @@ nav a {
     font-size: 1.2rem;
     margin-top: 3px;
     margin-left: 5rem;
-    font-family: Verdana, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
-nav a:hover, nav a:focus {
+nav a:first-of-type {
+    margin-left: 0;
+}
+
+nav a:hover,
+nav a:focus {
     color: black;
     text-shadow: 1px 1px 0.5px darkslategray;
 }
@@ -72,7 +79,6 @@ nav a.current {
 main {
     max-width: 90%;
     margin: auto;
-    
 }
 
 #pics {
@@ -84,8 +90,14 @@ main {
 
 h2 {
     font-size: 3rem;
-    font-family: Tahoma, sans-serif;
-    
+    font-family: 'Rowdies', cursive;
+    font-variant: small-caps;
+}
+
+h2::before {
+    content: url('https://img.icons8.com/pastel-glyph/64/000000/cat--v2.png');
+    margin-right: 2rem;
+    height: 2rem;
 }
 
 article {
@@ -99,34 +111,41 @@ img {
     margin: 1rem;
     box-shadow: 0 0 1rem black;
 }
+
 /*---------------Table---------------*/
 table {
-    font-family: Verdana, sans-serif;
-    color: darkslategray;
-
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     min-width: 90%;
     margin: auto;
-
+    padding: 0;
     font-size: 1.2rem;
     text-align: center;
     background-color: #f0fcfc;
     border-radius: 0 0 1rem 1rem;
     box-shadow: 0 0.5rem 1rem #f9fff9;
-    
-    
 }
 
+table tbody {
+    color: white;
+    text-shadow: 0 0 0.1rem black;
+    background-color: #9ba0a1;
+    background-image: url("../img/confused.webp");
+}
 
 thead tr {
     padding-bottom: 1rem;
 }
 
 th {
-    font-family: 'Trebuchet MS', sans-serif;
+    font-family: 'Rowdies', cursive;
     font-size: 1.5rem;
-    font-weight: bold;
     background-color: beige;
     border-radius: 0.4rem;
+}
+
+th::first-letter {
+    font-size: 2rem;
+    font-weight: 700;
 }
 
 thead tr th {
@@ -139,30 +158,25 @@ tfoot tr th {
     padding-top: 0.5rem;
 }
 
-tr:nth-of-type(odd) {
-    background-color: #e4f4e4;
-}
-tr:nth-of-type(even){
-    background-color: #f0fcfc;
+tbody tr {
+    background-color: #09303050;
 }
 
-td{
+td {
     min-width: 7rem;
 }
 
-
-
 /*------------description List------------*/
 dl {
-    
     font-size: 1.8rem;
-    font-family: Verdana, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    list-style-type: disc;
+    list-style-image: url(../img/pawprint.png);
 }
 
 dt {
-    font-family: 'Trebuchet MS', sans-serif;
+    font-family: 'Rowdies', cursive;
     font-size: 2rem;
-    font-weight: bold;
     background-color: beige;
     padding: 0.3rem;
     margin: 0.8rem 0;
@@ -170,6 +184,13 @@ dt {
     box-shadow: 0 3px 0.8rem black;
     border-right: 3px solid black;
 }
+
+dt::first-letter {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+
 
 dd {
     background-color: #f0fcfc;
@@ -180,7 +201,11 @@ dd {
     padding-left: 0.4rem;
     text-shadow: 0 0 0.8rem white;
 }
-
+dd::before{
+    content: url("../img/pawprint.png");
+    margin-right: 0.5rem;
+    
+}
 /*---------------form---------------*/
 form {
     font-size: 1.5rem;
@@ -207,13 +232,14 @@ form button {
     font-size: 1rem;
     background-color: lightgray;
     color: #183939;
+    font-family: "Rowdies";
 }
 
-form button:hover, form button:focus{
+form button:hover,
+form button:focus {
     border: 1px solid #507250;
     background-color: #d0e2d0;
     color: black;
-    
 }
 
 form input,
@@ -237,10 +263,10 @@ footer {
     header h1 {
         font-size: 6rem;
     }
-    td{
+
+    td {
         min-width: 0;
     }
-    
 }
 
 @media screen and (max-width: 810px) {
@@ -252,36 +278,38 @@ footer {
         font-size: 2rem;
     }
 
-    
-    nav a{
+    nav a {
         margin-left: 2rem;
     }
 }
 
 @media screen and (max-width: 610px) {
-    header{
+    header {
         border-left: none;
         border-right: none;
     }
+
     header h1 {
-        font-size: 4.5rem;
+        font-size: 3.5rem;
+        letter-spacing: -2px;
+    }
+
+    nav {
+        margin: 0 1rem 0 1rem;
     }
 
     nav a {
         font-size: 0.9rem;
-        
     }
 
     th:nth-of-type(5),
     td:nth-of-type(5) {
         display: none;
     }
-  
 
-    main{
+    main {
         max-width: none;
         width: 100%;
         margin: auto;
-        
     }
 }
